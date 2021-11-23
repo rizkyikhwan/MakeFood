@@ -1,6 +1,8 @@
 @import "./font";
 @import "./rootColor";
 @import "./components/navbar";
+@import "./components/hero";
+@import "./components/category";
 
 * {
   margin: 0;
@@ -10,6 +12,11 @@
 
 body {
   background-color: $background;
+  scroll-behavior: smooth;
 }
 
 @include navbar;
+
+@include hero;
+
+@include category;

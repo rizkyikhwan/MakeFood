@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Puritan:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Puritan:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Puritan:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Puritan:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +15,7 @@
 
 body {
   background-color: #082032;
+  scroll-behavior: smooth;
 }
 
 .navbar {
@@ -23,6 +30,7 @@ body {
           align-items: center;
   padding: 2rem 0;
   margin: 0 auto;
+  z-index: 99;
 }
 
 .navbar #navbar-logo {
@@ -59,6 +67,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  letter-spacing: 1px;
   color: #fff;
   text-decoration: none;
 }
@@ -74,9 +83,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  .navbar .nav-container {
-    position: relative;
-  }
   .navbar .nav-menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -140,4 +146,144 @@ body {
     -webkit-transform: translateY(-8px) rotate(-45deg);
             transform: translateY(-8px) rotate(-45deg);
   }
+}
+
+.hero {
+  margin-top: 2.5rem;
+  min-height: 80vh;
+}
+
+.hero .text-heading {
+  font-family: "Puritan", sans-serif;
+  color: #fff;
+  font-size: 2.5vw;
+}
+
+.hero .text-heading span {
+  font-weight: 700;
+}
+
+@media (max-width: 992px) {
+  .hero .text-heading {
+    font-size: 24px;
+  }
+}
+
+.hero .button {
+  font-family: "Righteous", cursive;
+  background: #f0a500;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  font-weight: 600;
+  padding: 15px 50px;
+  border: none;
+  border-radius: 10px;
+}
+
+.hero .cheeseburger {
+  position: absolute;
+  width: 86px;
+  height: 86px;
+  -webkit-transform: translate(300%);
+          transform: translate(300%);
+  -webkit-animation: animation1 5s ease-out infinite alternate;
+          animation: animation1 5s ease-out infinite alternate;
+}
+
+@-webkit-keyframes animation1 {
+  from {
+    -webkit-transform: translateX(300%);
+            transform: translateX(300%);
+  }
+  to {
+    -webkit-transform: translateX(325%);
+            transform: translateX(325%);
+  }
+}
+
+@keyframes animation1 {
+  from {
+    -webkit-transform: translateX(300%);
+            transform: translateX(300%);
+  }
+  to {
+    -webkit-transform: translateX(325%);
+            transform: translateX(325%);
+  }
+}
+
+.hero .cake {
+  position: absolute;
+  width: 86px;
+  height: 86px;
+  -webkit-transform: translate(-50%, 150%);
+          transform: translate(-50%, 150%);
+  -webkit-animation: animation2 5s ease-out 2s infinite alternate both;
+          animation: animation2 5s ease-out 2s infinite alternate both;
+}
+
+@-webkit-keyframes animation2 {
+  from {
+    -webkit-transform: translate(-50%, 150%);
+            transform: translate(-50%, 150%);
+  }
+  to {
+    -webkit-transform: translate(-50%, 175%);
+            transform: translate(-50%, 175%);
+  }
+}
+
+@keyframes animation2 {
+  from {
+    -webkit-transform: translate(-50%, 150%);
+            transform: translate(-50%, 150%);
+  }
+  to {
+    -webkit-transform: translate(-50%, 175%);
+            transform: translate(-50%, 175%);
+  }
+}
+
+.hero .hero-img {
+  -webkit-filter: drop-shadow(8px 9px 8px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(8px 9px 8px rgba(0, 0, 0, 0.15));
+}
+
+@media (max-width: 576px) {
+  .hero-img {
+    margin-top: 12%;
+    width: 90%;
+  }
+}
+
+#category .title {
+  font-family: "Righteous", cursive;
+  color: #fff;
+}
+
+#category .form-select {
+  font-family: "Puritan", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  max-width: 175px;
+  background-color: #f0a500;
+  border: 0;
+}
+
+#category .card {
+  background-color: #334756;
+  color: #fff;
+  border: 0;
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+#category .card .card-body .card-title {
+  font-family: "Puritan", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }

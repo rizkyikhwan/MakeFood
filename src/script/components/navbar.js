@@ -12,8 +12,8 @@ class NavBar extends HTMLElement {
         <span class="bar"></span>
       </div>
       <ul class="nav-menu">
-        <li><a href="#" class="nav-links">Home</a></li>
-        <li><a href="#" class="nav-links">Recipe</a></li>
+        <li><a href="./" class="nav-links">Home</a></li>
+        <li><a href="./recipe.html" class="nav-links">Recipe</a></li>
         <li><a href="#" class="nav-links">About</a></li>
       </ul>
     `
