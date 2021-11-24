@@ -2,72 +2,76 @@
 @import "../rootColor";
 
 @mixin hero {
-  .hero {
-    margin-top: 2.5rem;
-    min-height: 80vh;
+  #hero {
+    margin-top: 150px;
 
-    .text-heading {
-      font-family: "Puritan", sans-serif;
-      color: #fff;
-      font-size: 2.5vw;
+    .hero {
+      margin-top: 2.5rem;
+      min-height: 80vh;
 
-      span {
-        font-weight: 700;
-      }
+      .text-heading {
+        font-family: "Puritan", sans-serif;
+        color: #fff;
+        font-size: 2.5vw;
 
-      @media (max-width: 992px) {
-        font-size: 24px;
-      }
-    }
-
-    .button {
-      font-family: "Righteous", cursive;
-      background: $orange;
-      font-size: 20px;
-      letter-spacing: 1px;
-      line-height: 30px;
-      font-weight: 600;
-      padding: 15px 50px;
-      border: none;
-      border-radius: 10px;
-    }
-
-    .cheeseburger {
-      position: absolute;
-      width: 86px;
-      height: 86px;
-      transform: translate(300%);
-      animation: animation1 5s ease-out infinite alternate;
-
-      @keyframes animation1 {
-        from {
-          transform: translateX(300%);
+        span {
+          font-weight: 700;
         }
-        to {
-          transform: translateX(325%);
+
+        @media (max-width: 992px) {
+          font-size: 24px;
         }
       }
-    }
 
-    .cake {
-      position: absolute;
-      width: 86px;
-      height: 86px;
-      transform: translate(-50%, 150%);
-      animation: animation2 5s ease-out 2s infinite alternate both;
+      .button {
+        font-family: "Righteous", cursive;
+        background: $orange;
+        font-size: 20px;
+        letter-spacing: 1px;
+        line-height: 30px;
+        font-weight: 600;
+        padding: 15px 50px;
+        border: none;
+        border-radius: 10px;
+      }
 
-      @keyframes animation2 {
-        from {
-          transform: translate(-50%, 150%);
-        }
-        to {
-          transform: translate(-50%, 175%);
+      .cheeseburger {
+        position: absolute;
+        width: 86px;
+        height: 86px;
+        transform: translate(300%);
+        animation: animation1 5s ease-out infinite alternate;
+
+        @keyframes animation1 {
+          from {
+            transform: translateX(300%);
+          }
+          to {
+            transform: translateX(325%);
+          }
         }
       }
-    }
 
-    .hero-img {
-      filter: drop-shadow(8px 9px 8px rgba(0, 0, 0, 0.15));
+      .cake {
+        position: absolute;
+        width: 86px;
+        height: 86px;
+        transform: translate(-50%, 150%);
+        animation: animation2 5s ease-out 2s infinite alternate both;
+
+        @keyframes animation2 {
+          from {
+            transform: translate(-50%, 150%);
+          }
+          to {
+            transform: translate(-50%, 175%);
+          }
+        }
+      }
+
+      .hero-img {
+        filter: drop-shadow(8px 9px 8px rgba(0, 0, 0, 0.15));
+      }
     }
   }
 

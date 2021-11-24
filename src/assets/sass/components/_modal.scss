@@ -1,0 +1,16 @@
+@import "../font";
+@import "../rootColor";
+
+@mixin modal {
+  .modal-content {
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.5);
+
+    .modal-header {
+      border: 0;
+
+      .modal-title {
+        font-family: "Righteous", cursive;
+      }
+    }
+  }
+}

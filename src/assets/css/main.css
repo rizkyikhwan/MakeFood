@@ -6,6 +6,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Puritan:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Puritan:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Puritan:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -18,18 +20,51 @@ body {
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  width: 7.5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f0a500;
+  border-radius: 25px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+.title {
+  font-family: "Righteous", cursive;
+  color: #fff;
+}
+
+.card {
+  background-color: #334756;
+  color: #fff;
+  border: 0;
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+.card .card-body .card-title {
+  font-family: "Puritan", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 .navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 2rem 0;
-  margin: 0 auto;
+  position: fixed;
+  width: 101%;
+  height: 100px;
+  top: 0;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   z-index: 99;
 }
 
@@ -37,20 +72,11 @@ body {
   font-family: "Righteous", cursive;
   letter-spacing: 0.1em;
   color: #f0a500;
-  margin-left: 20px;
+  margin-bottom: 0;
   cursor: pointer;
 }
 
 .navbar .nav-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   list-style: none;
   text-align: center;
   width: 35%;
@@ -70,6 +96,8 @@ body {
   letter-spacing: 1px;
   color: #fff;
   text-decoration: none;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .navbar .menu-toggle .bar {
@@ -82,6 +110,10 @@ body {
   background: #fff;
 }
 
+.navbar ul {
+  margin-bottom: 0;
+}
+
 @media (max-width: 768px) {
   .navbar .nav-menu {
     display: -webkit-box;
@@ -92,7 +124,6 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 0;
-    border-radius: 10px;
     width: 100%;
     position: absolute;
     top: 90px;
@@ -118,13 +149,12 @@ body {
     display: table;
     color: #fff;
   }
-  .navbar .navbar {
-    width: 100%;
-  }
   .navbar #mobile-menu {
     position: absolute;
-    top: 30px;
-    right: 5%;
+    top: 35px;
+    right: 7%;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
   }
   .navbar .menu-toggle .bar {
     display: block;
@@ -148,28 +178,75 @@ body {
   }
 }
 
-.hero {
+.sticky {
+  background: rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  width: 101%;
+  height: 75px;
+}
+
+.sticky #navbar-logo {
+  -webkit-filter: drop-shadow(0 0 2px);
+          filter: drop-shadow(0 0 2px);
+}
+
+.sticky .nav-menu {
+  top: 75px;
+}
+
+.sticky .nav-menu .nav-links {
+  color: #334756;
+  -webkit-filter: drop-shadow(0 0 2px);
+          filter: drop-shadow(0 0 2px);
+}
+
+@media (max-width: 768px) {
+  .sticky .nav-menu .nav-links {
+    color: #fff;
+    -webkit-filter: none;
+            filter: none;
+  }
+  .sticky #mobile-menu {
+    position: absolute;
+    top: 25px;
+    right: 7%;
+  }
+  .sticky .menu-toggle .bar {
+    background: #334756;
+    -webkit-filter: drop-shadow(0 0 1px);
+            filter: drop-shadow(0 0 1px);
+  }
+}
+
+#hero {
+  margin-top: 150px;
+}
+
+#hero .hero {
   margin-top: 2.5rem;
   min-height: 80vh;
 }
 
-.hero .text-heading {
+#hero .hero .text-heading {
   font-family: "Puritan", sans-serif;
   color: #fff;
   font-size: 2.5vw;
 }
 
-.hero .text-heading span {
+#hero .hero .text-heading span {
   font-weight: 700;
 }
 
 @media (max-width: 992px) {
-  .hero .text-heading {
+  #hero .hero .text-heading {
     font-size: 24px;
   }
 }
 
-.hero .button {
+#hero .hero .button {
   font-family: "Righteous", cursive;
   background: #f0a500;
   font-size: 20px;
@@ -181,7 +258,7 @@ body {
   border-radius: 10px;
 }
 
-.hero .cheeseburger {
+#hero .hero .cheeseburger {
   position: absolute;
   width: 86px;
   height: 86px;
@@ -213,7 +290,7 @@ body {
   }
 }
 
-.hero .cake {
+#hero .hero .cake {
   position: absolute;
   width: 86px;
   height: 86px;
@@ -245,7 +322,7 @@ body {
   }
 }
 
-.hero .hero-img {
+#hero .hero .hero-img {
   -webkit-filter: drop-shadow(8px 9px 8px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(8px 9px 8px rgba(0, 0, 0, 0.15));
 }
@@ -257,12 +334,25 @@ body {
   }
 }
 
-#category .title {
-  font-family: "Righteous", cursive;
+#recipe {
+  margin-top: 150px;
+  min-height: 85vh;
+  scroll-margin-top: 75px;
+}
+
+#recipe .form-control {
+  background: #334756;
+  border: 1px solid #334756;
   color: #fff;
 }
 
-#category .form-select {
+#recipe .button {
+  font-family: "Puritan", sans-serif;
+  font-weight: 700;
+  background: #f0a500;
+}
+
+#recipe .form-select {
   font-family: "Puritan", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -271,19 +361,15 @@ body {
   border: 0;
 }
 
-#category .card {
-  background-color: #334756;
-  color: #fff;
-  border: 0;
+.modal-content {
   -webkit-box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.5);
 }
 
-#category .card .card-body .card-title {
-  font-family: "Puritan", sans-serif;
-  font-weight: 700;
-  letter-spacing: 1px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+.modal-content .modal-header {
+  border: 0;
+}
+
+.modal-content .modal-header .modal-title {
+  font-family: "Righteous", cursive;
 }

@@ -13,8 +13,8 @@ class HeroSection extends HTMLElement {
       <div class="row d-flex align-items-center">
         <div class="col-md-6 col-12">
           <p class="text-heading">Let’s make a food by your own <br><span>With the best recipe!</span></p>
-          <a href="./recipe.html">
-            <button class="button">Let's Cook</button>
+          <a href="#recipe">
+            <button class="button">Let's Cooking</button>
           </a>
         </div>
         <div class="col-md-6 d-flex justify-content-end">

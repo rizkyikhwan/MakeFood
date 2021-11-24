@@ -7,9 +7,25 @@
     <title>Make Food</title>
   </head>
   <body>
+    <nav-bar
+      class="navbar d-flex justify-content-between align-items-center"
+    ></nav-bar>
     <div class="container">
-      <nav-bar class="navbar"></nav-bar>
-      <hero-section></hero-section>
+      <section id="hero">
+        <hero-section></hero-section>
+      </section>
+      <section id="recipe">
+        <div class="container">
+          <search-bar></search-bar>
+          <food-list class="row"></food-list>
+          <h4 class="title mt-3">Category Food</h4>
+          <select class="form-select" id="category-food">
+            <option selected>Select</option>
+          </select>
+          <div class="category-container row mb-5"></div>
+          <modal-detail></modal-detail>
+        </div>
+      </section>
     </div>
   </body>
 </html>

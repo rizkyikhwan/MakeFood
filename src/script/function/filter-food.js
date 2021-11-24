@@ -44,11 +44,14 @@ const filterFood = () => {
   }
 
   const showCards = (food) => {
-    return `<div class="col-md-3 col-6 my-3 px-2">
+    return `<div class="col-6 col-md-3 my-3 px-1 px-lg-2">
               <div class="card">
                 <img src="${food.strMealThumb}" class="card-img-top" />
                 <div class="card-body">
                   <h5 class="card-title">${food.strMeal}</h5>
+                  <button type="button" class="btn btn-primary modal-detail" data-bs-toggle="modal" data-bs-target="#exampleModal" data-idmeal=${food.idMeal}>
+                    Show Recipe
+                  </button>
                 </div>
             </div>
           </div>`

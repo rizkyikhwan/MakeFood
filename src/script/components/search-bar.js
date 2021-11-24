@@ -4,8 +4,8 @@ class SearchBar extends HTMLElement {
     this.render()
   }
 
-  set clickEvent(event) {
-    this._clickEvent = event
+  set searchEvent(event) {
+    this._searchEvent = event
     this.render()
   }
 
@@ -15,17 +15,18 @@ class SearchBar extends HTMLElement {
 
   render() {
     this.innerHTML = `
-    <div class="row g-3">
-      <div class="col-auto">
+    <div class="row g-3 mb-2">
+    <h4 class="title">Search Foods</h4>
+      <div class="col-auto col-sm-4">
         <input type="search" class="form-control" id="searchFood" placeholder="Search Food...">
       </div>
-      <div class="col-auto">
-        <button type="submit" class="btn btn-primary mb-3" id="searchButton">Search</button>
+      <div class="col-auto col-sm-2">
+        <button type="submit" class="btn button mb-3" id="searchButton">Search</button>
       </div>
     </div>
     `
 
-    this.querySelector("#searchButton").addEventListener("click", this._clickEvent)
+    this.querySelector("#searchButton").addEventListener("click", this._searchEvent)
   }
 }
 

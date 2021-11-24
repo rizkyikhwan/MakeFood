@@ -20,7 +20,7 @@ class FoodList extends HTMLElement {
     this.innerHTML = ""
     this._items.forEach(item => {
       const foodItemElement = document.createElement("food-item")
-      foodItemElement.setAttribute("class", "col-6 col-xl-2 col-md-4 my-2 px-2")
+      foodItemElement.setAttribute("class", "col-6 col-md-3 my-2 px-1 px-lg-2")
       foodItemElement.item = item
       this.appendChild(foodItemElement)
     })

@@ -27,10 +27,5 @@ module.exports = {
       filename: "index.html",
       inject: "body"
     }),
-    new HtmlWebpackPlugin({
-      template: "./src/recipe.html",
-      filename: "recipe.html",
-      inject: "body"
-    }),
   ]
 }
