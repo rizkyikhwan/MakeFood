@@ -1,6 +1,6 @@
+import baseURL from "../service/api.js"
+
 const filterFood = () => {
-  const baseURL = "https://www.themealdb.com/api/json/v1/1"
-  
   // Get selection category
   const getCategory = async () => {
     try {

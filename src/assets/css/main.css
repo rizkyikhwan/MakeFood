@@ -58,6 +58,13 @@ body {
   text-overflow: ellipsis;
 }
 
+.card .card-body .modal-detail {
+  font-family: "Puritan", sans-serif;
+  background: #f0a500;
+  color: #082032;
+  border: 0;
+}
+
 .navbar {
   position: fixed;
   width: 101%;
@@ -227,7 +234,6 @@ body {
 
 #hero .hero {
   margin-top: 2.5rem;
-  min-height: 80vh;
 }
 
 #hero .hero .text-heading {
@@ -328,7 +334,10 @@ body {
 }
 
 @media (max-width: 576px) {
-  .hero-img {
+  .wrap-img {
+    width: 93%;
+  }
+  .wrap-img .hero-img {
     margin-top: 12%;
     width: 90%;
   }
@@ -372,4 +381,22 @@ body {
 
 .modal-content .modal-header .modal-title {
   font-family: "Righteous", cursive;
+}
+
+.modal-content .modal-body .badge {
+  font-family: "Puritan", sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  background: #f0a500;
+}
+
+.modal-content .modal-body .btn {
+  font-family: "Puritan", sans-serif;
+  color: #fff;
+  background: #334756;
+}
+
+.modal-content .modal-body .title {
+  font-family: "Puritan", sans-serif;
+  color: #000;
 }

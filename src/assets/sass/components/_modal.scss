@@ -12,5 +12,23 @@
         font-family: "Righteous", cursive;
       }
     }
+
+    .modal-body .badge {
+      font-family: "Puritan", sans-serif;
+      font-weight: 700;
+      letter-spacing: 2px;
+      background: $orange;
+    }
+
+    .modal-body .btn {
+      font-family: "Puritan", sans-serif;
+      color: #fff;
+      background: $grayDark;
+    }
+
+    .modal-body .title {
+      font-family: "Puritan", sans-serif;
+      color: #000;
+    }
   }
 }

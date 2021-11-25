@@ -7,7 +7,6 @@
 
     .hero {
       margin-top: 2.5rem;
-      min-height: 80vh;
 
       .text-heading {
         font-family: "Puritan", sans-serif;
@@ -76,9 +75,12 @@
   }
 
   @media (max-width: 576px) {
-    .hero-img {
-      margin-top: 12%;
-      width: 90%;
+    .wrap-img {
+      width: 93%;
+      .hero-img {
+        margin-top: 12%;
+        width: 90%;
+      }
     }
   }
 }

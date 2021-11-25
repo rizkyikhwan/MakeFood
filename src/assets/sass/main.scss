@@ -52,6 +52,13 @@ body {
       white-space: nowrap;
       text-overflow: ellipsis;
     }
+
+    .modal-detail {
+      font-family: "Puritan", sans-serif;
+      background: $orange;
+      color: $background;
+      border: 0;
+    }
   }
 }
 
