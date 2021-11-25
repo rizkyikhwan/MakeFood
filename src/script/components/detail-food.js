@@ -21,13 +21,6 @@ const detailRecipe = () => {
     }
   })
 
-
-  // const insertToModal = (recipes) => {
-  //   const recipeDetail = showRecipe(recipes)
-  //   const modalBody = document.querySelector(".modal-body")
-  //   modalBody.innerHTML = recipeDetail
-  // }
-
   const showRecipe = (recipe) => {
     const modalBody = document.querySelector(".modal-body")
     modalBody.innerHTML = ""
