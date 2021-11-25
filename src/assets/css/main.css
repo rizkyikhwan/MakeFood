@@ -252,7 +252,12 @@ body {
   }
 }
 
-#hero .hero .button {
+#hero .hero .links {
+  color: #000;
+  text-decoration: none;
+}
+
+#hero .hero .links .button {
   font-family: "Righteous", cursive;
   background: #f0a500;
   font-size: 20px;

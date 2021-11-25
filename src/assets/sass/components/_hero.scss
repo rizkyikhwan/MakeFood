@@ -22,16 +22,21 @@
         }
       }
 
-      .button {
-        font-family: "Righteous", cursive;
-        background: $orange;
-        font-size: 20px;
-        letter-spacing: 1px;
-        line-height: 30px;
-        font-weight: 600;
-        padding: 15px 50px;
-        border: none;
-        border-radius: 10px;
+      .links {
+        color: #000;
+        text-decoration: none;
+
+        .button {
+          font-family: "Righteous", cursive;
+          background: $orange;
+          font-size: 20px;
+          letter-spacing: 1px;
+          line-height: 30px;
+          font-weight: 600;
+          padding: 15px 50px;
+          border: none;
+          border-radius: 10px;
+        }
       }
 
       .cheeseburger {
